@@ -1,0 +1,11 @@
+import requests
+
+response = requests.get('https://opendomesday.org/api/1.0/county/dby/')
+
+data = response.json()
+
+# Extract the ID of Derbyshire
+derbyshire_id = data['id']
+
+# Print the ID of Derbyshire
+print(derbyshire_id)

@@ -1,0 +1,5 @@
+for place in places:
+    print(place['id'])import requests
+
+response = requests.get('https://opendomesday.org/place/SK3536/derby/')
+places = response.json()
